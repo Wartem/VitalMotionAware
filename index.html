@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrin Valde - VitalMotionAware.care Sjukgymnast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin="">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hem">Hem</a></li>
+                <li><a href="#om-katrin">Om Katrin</a></li>
+                <li><a href="#tjanster">Tjänster</a></li>
+                <li><a href="#kontakt">Bokning</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#blogg">Blogg</a></li>
+                <li><a href="#recensioner">Recensioner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hem">
+            <img src="img/katrin.jpeg" alt="Katrin Valde">
+            <h1>Välkommen till VitalMotionAware.care</h1>
+            <h2>Katrin Valde - Sjukgymnast specialiserad inom Body awareness Regulation Therapy</h2>
+            <p>Upptäck harmoni mellan kropp och sinne genom innovativ terapi.</p>
+            <a href="#kontakt" class="cta-button">Boka tid nu</a>
+        </section>
+
+        <section id="om-katrin" class="animate-on-scroll">
+            <h2>Om Katrin</h2>
+            <div class="service flex-container">
+                <div class="flex-item">
+                    <img src="img/profilbild.jpeg" alt="Katrin Valde">
+                </div>
+                <div class="flex-item">
+                    <p>Katrin är en primärvårdspraktiserande sjukgymnast med lång erfarenhet inom primärvårdens vuxna och med särskilt intresse och utbildningar inom psykisk ohälsa hos barn. Katrin är utövare av Body awareness Regulation Therapy (BRT) och medlem i brt-gruppen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tjanster" class="animate-on-scroll">
+            <h2>Våra Tjänster</h2>
+            <div class="service">
+                <h3>Body awareness Regulation Therapy (BRT)</h3>
+                <p>Body awareness Regulation Therapy (BRT) är en innovativ terapeutisk metod som integrerar kroppslig medvetenhet och reglering för att främja psykisk och fysisk harmoni. BRT:s primära mål är att stärka individens inre balans och välbefinnande genom att fokusera på kroppens och sinnets samspel. Denna metod är särskilt användbar för personer som upplever psykisk ohälsa, inklusive de med trauma och kronisk smärta.</p>
+                <p><strong>Läs mer om BRT på <a href="https://brt.care">brt.care</a></strong></p>
+            </div>
+        </section>
+
+        <section id="recensioner" class="animate-on-scroll">
+            <h2>Vad våra klienter säger</h2>
+            <div class="testimonial-container">
+                <ul class="testimonials">
+                    <li class="active">Katrin har hjälpt mig att hitta en balans i mitt liv som jag inte trott var möjlig.</li>
+                    <li>Jag kände mig trygg och bekväm under terapin, vilket gjorde det lättare för mig att öppna upp om mina problem.</li>
+                    <li>Efter bara några sessioner kunde jag märka en tydlig skillnad i både min kropp och mitt sinne.</li>
+                    <li>Att arbeta med Katrin har gett mig ett nytt perspektiv på hur min kropp och mina känslor hänger ihop.</li>
+                    <li>Katrins metod var precis vad jag behövde för att komma tillbaka från min utbrändhet och hitta lugnet igen.</li>
+                    <li>Jag har aldrig känt mig så förstådd och stöttad under en behandling. Katrin är en fantastisk terapeut.</li>
+                    <li>Min smärta har minskat dramatiskt sedan jag började jobba med Katrin. Hennes teknik är verkligen effektiv.</li>
+                    <li>Katrins behandlingar har gett mig verktyg att hantera min stress på ett mycket mer balanserat sätt.</li>
+                    <li>Jag har äntligen fått kontroll över min andning och hittat en inre styrka som jag inte visste att jag hade.</li>
+                    <li>Tack vare Katrins vägledning känner jag mig starkare och mer centrerad än någonsin tidigare.</li>
+                    <li>Jag rekommenderar Katrin till alla som vill förbättra sin hälsa och livskvalitet. Hennes behandlingar är en investering i ditt välmående.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="kontakt" class="animate-on-scroll">
+            <h2>Kontakta oss</h2>
+            <div class="service">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrDqyNSOexF22PJ_oK6PpcGlB2fxD-t2Ru8JxMiVP2NgBg4A/viewform?embedded=true" 
+                        width="100%" height="1878" frameborder="0" marginheight="0" marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
+        </section>
+
+        <section id="hitta-hit" class="animate-on-scroll">
+            <h2>Hitta hit</h2>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+        </section>
+
+        <section id="blogg" class="animate-on-scroll">
+            <h2>Senaste från bloggen</h2>
+            <div class="service">
+                <p><strong>11 september 2024:</strong></p>
+                <p>Vi är i startgroparna för det kommande året. Vi har gjort en hel del för att få en bättre förståelse av hur vi jobbar med våra kunder och hur vi kan hjälpa dem att uppnå det som de vill.</p>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> VitalMotionAware.care - Katrin Valde. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
