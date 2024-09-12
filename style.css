@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', monospace;
 }
 
 body {
@@ -16,6 +17,10 @@ body {
     /* background-attachment: fixed; */
 }
 
+a {
+    color: var(--primary-color);
+}
+
 /* Färgschema */
 :root {
     --primary-color: #115862;
@@ -23,6 +28,7 @@ body {
     --accent-color: #beefec;
     --text-color: #333;
     --bg-color: #beefec;
+
 }
 
 /* Header och navigation */
@@ -84,11 +90,23 @@ h1, h2, h3 {
     padding: 4rem 2rem 2rem;
 }
 
+#hem h1{
+    font-size: 2.8rem;
+}
+
+#hem h3{
+    font-size: 1.9rem;
+}
+
+#hem h3 p{
+    font-size: 2rem;
+}
+
 #hem img {
     max-width: 100%;
     height: auto;
     max-height: 500px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border-radius: 50%;
 }
 
@@ -98,7 +116,7 @@ h1, h2, h3 {
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
     margin-top: 1rem;
@@ -129,7 +147,7 @@ h1, h2, h3 {
 }
 
 .flex-item p {
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -139,6 +157,11 @@ h1, h2, h3 {
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.large-on-scroll {
+    transition: transform 0.75s ease-in-out, box-shadow 5s ease-in-out;
 }
 
 /* Kontaktformulär */
@@ -171,9 +194,9 @@ form button:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.3rem;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--primary-color);
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
@@ -286,18 +309,6 @@ form button.success {
     transform: translateY(0);
 }
 
-/* .testimonials li {
-    display: none;
-} */
-
-/* .testimonials li.active {
-    display: block;
-} */
-
-.service {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
 
 
 
@@ -369,10 +380,96 @@ form button.success {
     }
 }
 
-
-
-
-
 #recensioner{
     padding-bottom: 8rem;
+}
+
+#typing-container {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    animation: typing 3.5s steps(60, end), blink-caret .65s step-end 8; 
+    word-wrap: break-word;
+    border-right: .15em solid transparent;
+    animation: caret 1s steps(1) infinite;
+    margin: 1rem 0;
+    padding: 0.5renpx;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Blinkande marköranimering */
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 800px) {
+    #typing-container {
+        font-size: 0.8rem;
+    }
+    
+    #hem h1{
+        font-size: 2rem;
+    }
+    
+    #hem h3{
+        font-size: 1.2rem;
+    }
+
+    #hem h3 p{
+        font-size: 1.4rem;
+    }
+    
+    #typing-container {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media queries för mindre skärmar */
+@media (max-width: 500px) {
+    #typing-container {
+        font-size: 0.8rem;
+    }
+    
+    #hem h1{
+        font-size: 1.5rem;
+    }
+    
+    #hem h3{
+        font-size: 0.8rem;
+    }
+
+    #hem h3 p{
+        font-size: 1rem;
+    }
+    
+    #typing-container {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 300px) {
+    #typing-container {
+        font-size: 0.6rem;
+    }
+    
+    #hem h1{
+        font-size: 1.2rem;
+    }
+    
+    #hem h3{
+        font-size: 0.6rem;
+    }
+
+    #hem h3 p{
+        font-size: 0.8rem;
+    }
+    
+    #typing-container {
+        font-size: 0.6rem;
+    }
 }
