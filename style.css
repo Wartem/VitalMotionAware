@@ -298,12 +298,11 @@ form button.success {
 }
 
 .blog-entry {
-    padding: 0;
     margin: 0.5rem;
     margin-bottom: 2rem;
     border-radius: 0.2rem;
     border-color: var(--primary-color);
-    border-width: 0.1rem;
+    border-width: 0.2rem;
     border-top-style: none;
     border-bottom-style: solid;
 }
