@@ -1,9 +1,37 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.woff2') format('woff2'),
+         url('fonts/Lato-Regular.woff') format('woff'),
+         url('fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Bold.woff2') format('woff2'),
+         url('fonts/Lato-Bold.woff') format('woff'),
+         url('fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Italic.woff2') format('woff2'),
+         url('fonts/Lato-Italic.woff') format('woff'),
+         url('fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+
 /* Grundläggande reset och typografi */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', monospace;
+    font-family: 'Lato', sans-serif, Arial, monospace;
 }
 
 body {
@@ -66,22 +94,33 @@ nav ul li a:hover {
 /* Main content */
 main {
     max-width: 1200px;
-    margin: 80px auto 0;
+    margin: 5rem auto 0;
     padding: 2rem;
 }
 
 section {
     margin-bottom: 4rem;
     background-color: var(--bg-color);
-    padding: 2rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
     background-image: linear-gradient(to bottom, var(--accent-color), #ccc);
 }
 
+section #kontakt{
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+}
+
+h2{
+    padding-left: 1rem;
 }
 
 /* Hem-sektion */
@@ -128,9 +167,9 @@ h1, h2, h3 {
 
 /* Om Katrin-sektion */
 #om-katrin {
-    padding: 20px;
     max-width: 1200px;
     margin: 0 auto 4rem;
+    padding-bottom: 1rem;
 }
 
 .flex-container {
@@ -155,6 +194,7 @@ h1, h2, h3 {
 .service {
     background-color: #f9f9f9;
     padding: 1.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 8px;
     margin-bottom: 1rem;
     font-size: 1.1rem;
@@ -245,6 +285,8 @@ form button.success {
 #kontakt .service {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Map */
@@ -253,6 +295,17 @@ form button.success {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.blog-entry {
+    padding: 0;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+    border-color: var(--primary-color);
+    border-width: 0.1rem;
+    border-top-style: none;
+    border-bottom-style: solid;
 }
 
 /* Responsiv design */
