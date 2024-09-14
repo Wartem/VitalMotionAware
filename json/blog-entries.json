@@ -1,0 +1,16 @@
+{
+    "blogPosts": [
+      {
+        "date": "10 september 2024",
+        "content": "Vi är i startgroparna för det kommande året. Vi har gjort en hel del för att få en bättre förståelse av hur vi jobbar med våra kunder och hur vi kan hjälpa dem att uppnå det som de vill."
+      },
+      {
+        "date": "11 september 2024",
+        "content": "Webbplatsens struktur är nästan klar för första utkastet."
+      },
+      {
+        "date": "12 september 2024",
+        "content": "Finjusteringar görs och mer CSS och Javascript läggs till."
+      }
+    ]
+  }

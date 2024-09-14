@@ -1,0 +1,394 @@
+/* Responsive design */
+@media (max-width: 1265px) {
+  body {
+    width: 96%;
+  }
+}
+
+@media (max-width: 800px) {
+  #typing-container {
+    font-size: 1.2rem;
+  }
+
+  #hem h1 {
+    font-size: 2rem;
+  }
+
+  #hem h3 {
+    font-size: 1.2rem;
+  }
+
+  #hem h3 p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .flex-container,
+  .flex-container-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #om-katrin img {
+    max-height: 300px;
+  }
+
+  .testimonials li {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+  }
+
+  #eval-container {
+    margin-right: auto;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  #eval-container .button-calc {
+    margin: 0 auto;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #typing-container {
+    font-size: 0.8rem;
+  }
+
+  #hem h1 {
+    font-size: 1.5rem;
+  }
+
+  #hem h3 {
+    font-size: 0.8rem;
+  }
+
+  #hem h3 p {
+    font-size: 1rem;
+  }
+
+  #om-katrin img {
+    max-height: 200px;
+  }
+
+  #eval-tab-nav {
+    border-bottom-width: 0.7rem;
+    border-bottom-style: solid;
+    border-top-width: 0.7rem;
+    border-top-style: solid;
+    border-radius: 0.3rem;
+    border-width: 0.08rem;
+    padding: 0.3rem;
+    border-color: var(--primary-color);
+    background-color: var(--bg-color);
+  }
+
+  #eval-tab-nav .tab-button {
+/*     width: auto;
+    height: auto;
+    padding: 0.4rem 0.725rem;
+    margin-right: 0.7rem;
+    border-radius: 0.7rem;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+    font-size: 0.8rem; */
+    margin-right: 0rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Base styles */
+  body {
+    font-size: 14px;
+    margin: 0.5rem auto;
+  }
+
+  /* Layout Components */
+  .container {
+    padding: 1rem;
+  }
+
+  #behandlingar .flex-container {
+    gap: 1rem;
+  }
+
+  /* Header and Navigation */
+  header {
+    margin: 0.5rem auto;
+  }
+
+  nav ul {
+    padding: 0.5rem 0;
+  }
+
+  nav ul li {
+    margin: 0 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem;
+    border-style: ridge;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    font-size: 1rem;
+  }
+
+  nav ul li a:hover {
+    padding: 0.3rem;
+  }
+
+  /* Main Content */
+  main {
+    margin-top: 3rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+    padding: 1rem 0.5rem;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+
+  /* Home Section */
+  #hem {
+    padding: 2rem 1rem;
+  }
+
+  #hem h1 {
+    font-size: 1.8rem;
+  }
+  #hem h3 {
+    font-size: 1.2rem;
+  }
+  #hem h3 p {
+    font-size: 1.4rem;
+  }
+
+  #hem img {
+    max-height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  /* Buttons */
+  .button {
+    padding: 0.6rem 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  /* About Katrin Section */
+  #om-katrin {
+    margin-bottom: 2rem;
+  }
+
+  .flex-item {
+    padding: 0.5rem;
+  }
+
+  .flex-item p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .profile img {
+    max-width: 150px;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Forms */
+  form input,
+  form textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1rem;
+  }
+
+  /* Map */
+  #map {
+    height: 300px;
+  }
+
+  /* Blog Entry */
+  .blog-entry {
+    margin: 0.3rem 0.3rem 0.5rem;
+    padding: 0.5rem;
+    /* font-size: 0.2rem;; */
+  }
+
+  /* Testimonials Section */
+  #recensioner {
+    padding-bottom: 4rem;
+    margin-bottom: 7rem;
+  }
+
+  /* Typing Effect */
+  #typing-container {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+  }
+
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 1rem;
+    }
+
+    .question-container {
+      padding-bottom: 0.75rem;
+    }
+
+    .question {
+      width: 100%;
+      margin-right: 0.75rem;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+    }
+
+    .question p {
+      font-size: 0.9rem;
+    }
+
+    label {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+    }
+
+    label:hover {
+      transform: translateX(0.25rem);
+    }
+
+    input[type="radio"] {
+      margin: auto;
+      margin-right: 0.5rem;
+      margin-left: 0rem;
+    }
+
+    #eval-container .button-calc {
+      font-size: 0.85rem;
+    }
+
+    button:hover,
+    .button-calc:hover {
+      transform: translateY(-0.1rem);
+    }
+
+    #result {
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .result-container {
+      margin-top: 0.75rem;
+    }
+
+    .tab-header {
+      padding: 0.3rem;
+    }
+
+    #eval-tab-nav {
+      border-bottom-width: 0.75rem;
+      border-top-width: 0.75rem;
+      border-radius: 0.4rem;
+      border-width: 0.075rem;
+      padding: 0.3rem;
+    }
+
+    .tab-button {
+      padding: 0.5rem 1rem;
+      margin-right: 0.75rem;
+      border-radius: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .tab-content {
+      padding-top: 0.75rem;
+    }
+}
+
+@media (max-width: 300px) {
+  #typing-container {
+    font-size: 0.6rem;
+  }
+
+  #hem h1 {
+    font-size: 1.2rem;
+  }
+
+  #hem h3 {
+    font-size: 0.6rem;
+  }
+
+  #hem h3 p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Blinkande marköranimering */
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}

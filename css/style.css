@@ -1,0 +1,324 @@
+/* Variables */
+:root {
+  --color-primary: #115862;
+  --color-secondary: #50a8aa;
+  --color-accent: #beefec;
+  --color-text: #333;
+  --color-background: #beefec;
+  --gradient-background: linear-gradient(
+    to bottom,
+    var(--color-accent),
+    #a6cee9
+  );
+  --color-accent-transparent: rgba(190, 239, 236, 0.7);
+  --gradient-background-header: linear-gradient(
+    to bottom,
+    var(--color-accent-transparent),
+    #a6cee9
+  );
+  --font-main: "Lato", Arial, sans-serif;
+  --shadow-standard: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --transition-standard: 0.3s ease;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: #f4f4f4 url("../img/bakgrund.jpeg") center/cover no-repeat;
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Layout Components */
+.container {
+  /*     max-width: 1200px; */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#behandlingar .flex-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#behandlingar .flex-container h3 {
+  margin-left: 0;
+}
+
+#behandlingar .flex-container #behandlingar-intro {
+  background-color: var(--color-accent);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Header and Navigation */
+header {
+  background: var(--gradient-background-header);
+  box-shadow: var(--shadow-standard);
+  position: fixed;
+  max-width: 1200px;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--color-text);
+  font-weight: bold;
+  transition: color var(--transition-standard);
+}
+
+nav ul li a:hover {
+  color: var(--color-accent);
+  /*  transform: translateZ(0); */ /* scale(2) */
+  transition: all 0.3s linear; 
+  border-radius: 1rem; /* add rounded corners */
+  background-color: var(--color-secondary);
+  padding: 0.5rem;
+  /* padding: 10px; */ /* add some padding to make the background visible */
+}
+/* Main Content */
+main {
+  margin-top: 5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: var(--gradient-background);
+  padding: 2rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-standard);
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  margin-left: 1rem;
+}
+
+/* Home Section */
+#hem {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+#hem h1 {
+  font-size: 2rem;
+}
+#hem h3 {
+  font-size: 1.4rem;
+}
+#hem h3 p {
+  font-size: 1.6rem;
+}
+
+#hem img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 3rem;
+  border-radius: 50%;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: background-color var(--transition-standard);
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: var(--color-primary);
+}
+
+/* About Katrin Section */
+#om-katrin {
+  margin-bottom: 4rem;
+}
+
+#om-katrin .flex-container {
+  margin-top: 0rem;
+}
+
+.flex-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.flex-item p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.profile img {
+  max-width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(1.2rem);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+form button:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+form button.loading {
+  background-color: #f0ad4e;
+  cursor: not-allowed;
+}
+
+form button.success {
+  background-color: var(--color-accent);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  background: var(--gradient-background);
+  color: var(--color-primary);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Confirmation Message */
+.confirmation-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--transition-standard);
+}
+
+.confirmation-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Map */
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Blog Entry */
+.blog-entry {
+  margin: 0.5rem 0.5rem 1rem;
+  border-bottom: 0.1rem solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  background-color: white;
+}
+
+/* Testimonials Section */
+#recensioner {
+  padding-bottom: 8rem;
+}
+
+#recensioner h2,
+#hitta-hit h2,
+#trauma h2,
+#axiety h2,
+#stress h2 {
+  margin-bottom: 1rem;
+}
+
+/* Typing Effect */
+#typing-container {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+}

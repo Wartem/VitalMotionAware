@@ -1,474 +1,193 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Katrin Valdes webbplats" />
     <title>Katrin Valde - VitalMotionAware.care Sjukgymnast</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="eval.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-          crossorigin="">
-</head>
-<body>
+    <link rel="stylesheet" href="css/font-inclusion.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/eval.css" />
+    <!-- For Google map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#hem">Hem</a></li>
-                <li><a href="#om-katrin">Om Katrin</a></li>
-                <li><a href="#tjanster">Tjänster</a></li>
-                <li><a href="#kontakt">Bokning</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-                <li><a href="#blogg">Blogg</a></li>
-                <li><a href="#recensioner">Recensioner</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#hem">Hem</a></li>
+          <li><a href="#om-katrin">Om Katrin</a></li>
+          <li><a href="#behandlingar">Behandlingar</a></li>
+          <li><a href="#recensioner">Recensioner</a></li>
+          <li><a href="#kontakt">Bokning</a></li>
+          <li><a href="#hitta-hit">Kontakt</a></li>
+          <li><a href="#eval-container">Självreflektion</a></li>
+          <li><a href="#blog">Blogg</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="hem" class="animate-on-scroll large-on-scroll">
-            <img src="img/katrin.jpeg" alt="Katrin Valde">
-            <h3>Välkommen till</h3>
-            <h1>VitalMotionAware.care</h1>
-            <h3><p>Katrin Valde, Legitimerad Sjukgymnast</p></h3>
-            <div id="typing-container"><br></div>
-            <a href="#kontakt" class="cta-button">Boka tid nu</a>
-        </section>
+      <section id="hem" class="animate-on-scroll large-on-scroll">
+        <img src="img/katrin.jpeg" alt="Katrin Valde" />
+        <h3>Välkommen till</h3>
+        <h1>VitalMotionAware.care</h1>
+        <h3>Katrin Valde, Legitimerad Sjukgymnast</h3>
+        <div id="typing-container"></div>
+        <a href="#kontakt" class="button">Boka tid nu</a>
+      </section>
 
-        <section id="om-katrin" class="service-animate-on-scroll large-on-scroll">
-            <h2>Om Katrin</h2>
-            <div class="service flex-container">
-                <div class="flex-item">
-                    <img src="img/profilbild.jpeg" alt="Katrin Valde">
-                </div>
-                <div class="flex-item">
-                    <p>Katrin är en primärvårdspraktiserande sjukgymnast med lång erfarenhet inom primärvårdens vuxna och med särskilt intresse och utbildningar inom psykisk ohälsa hos barn. Katrin är utövare av Body awareness Regulation Therapy (BRT) och medlem i brt-gruppen.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="tjanster" class="animate-on-scroll large-on-scroll">
-            <h2>Våra Tjänster</h2>
-            <div class="service flex-container">
-                <div class="flex-item">
-                <h3>Body awareness Regulation Therapy (BRT)</h3>
-                <p>Body awareness Regulation Therapy (BRT) är en innovativ terapeutisk metod som integrerar kroppslig medvetenhet och reglering för att främja psykisk och fysisk harmoni. BRT:s primära mål är att stärka individens inre balans och välbefinnande genom att fokusera på kroppens och sinnets samspel. Denna metod är särskilt användbar för personer som upplever psykisk ohälsa, inklusive de med trauma och kronisk smärta.</p>
-                <br>
-                <p><strong>Läs mer om BRT på <a href="https://www.brt.care">www.brt.care</a></strong></p>
-            </div>
+      <section id="om-katrin" class="animate-on-scroll large-on-scroll">
+        <h2>Om Katrin</h2>
+        <div class="flex-container">
+          <div class="profile">
+            <img src="img/profilbild.jpeg" alt="Katrin Valde" />
+          </div>
+          <div class="flex-item">
+            <p>
+              Katrin är en primärvårdspraktiserande sjukgymnast med lång
+              erfarenhet inom primärvårdens vuxna och med särskilt intresse och
+              utbildningar inom psykisk ohälsa hos barn. Katrin är utövare av
+              Body awareness Regulation Therapy (BRT) och medlem i brt-gruppen.
+            </p>
+          </div>
         </div>
-        </section>
+      </section>
 
-        <section id="recensioner" class="animate-on-scroll large-on-scroll">
-            <h2>Vad våra klienter säger</h2>
-            <div class="testimonial-container">
-                <ul class="testimonials">
-                    <li class="active">Katrin har hjälpt mig att hitta en balans i mitt liv som jag inte trott var möjlig.</li>
-                    <li>Jag kände mig trygg och bekväm under terapin, vilket gjorde det lättare för mig att öppna upp om mina problem.</li>
-                    <li>Efter bara några sessioner kunde jag märka en tydlig skillnad i både min kropp och mitt sinne.</li>
-                    <li>Att arbeta med Katrin har gett mig ett nytt perspektiv på hur min kropp och mina känslor hänger ihop.</li>
-                    <li>Katrins metod var precis vad jag behövde för att komma tillbaka från min utbrändhet och hitta lugnet igen.</li>
-                    <li>Jag har aldrig känt mig så förstådd och stöttad under en behandling. Katrin är en fantastisk terapeut.</li>
-                    <li>Min smärta har minskat dramatiskt sedan jag började jobba med Katrin. Hennes teknik är verkligen effektiv.</li>
-                    <li>Katrins behandlingar har gett mig verktyg att hantera min stress på ett mycket mer balanserat sätt.</li>
-                    <li>Jag har äntligen fått kontroll över min andning och hittat en inre styrka som jag inte visste att jag hade.</li>
-                    <li>Tack vare Katrins vägledning känner jag mig starkare och mer centrerad än någonsin tidigare.</li>
-                    <li>Jag rekommenderar Katrin till alla som vill förbättra sin hälsa och livskvalitet. Hennes behandlingar är en investering i ditt välmående.</li>
-                </ul>
-            </div>
-        </section>
+      <section id="behandlingar" class="animate-on-scroll large-on-scroll">
+        <h2>Våra Behandlingar</h2>
+        <div class="flex-container">
+          <div id="behandlingar-intro" class="flex-item">
+            <h3>Body awareness Regulation Therapy (BRT)</h3>
+            <p>
+              Våra behandlingar grundar sig på Body awareness Regulation Therapy
+              (BRT). Brt är en innovativ terapeutisk metod som integrerar
+              kroppslig medvetenhet och reglering för att främja psykisk och
+              fysisk harmoni. BRT:s primära mål är att stärka individens inre
+              balans och välbefinnande genom att fokusera på kroppens och
+              sinnets samspel. Denna metod är särskilt användbar för personer
+              som upplever psykisk ohälsa, inklusive de med trauma och kronisk
+              smärta.
+            </p>
 
+            <p>
+              <strong
+                >Läs mer om BRT på
+                <a href="https://www.brt.care">www.brt.care</a></strong
+              >
+            </p>
+          </div>
 
-        <section id="kontakt" class="animate-on-scroll large-on-scroll">
-            <!-- <h2>Kontakta oss</h2> -->
-            <div class="service">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrDqyNSOexF22PJ_oK6PpcGlB2fxD-t2Ru8JxMiVP2NgBg4A/viewform?embedded=true" 
-                        width="100%" height="1878" frameborder="0" marginheight="0" marginwidth="0">
-                    Loading…
-                </iframe>
-            </div>
-        </section>
+          <div class="flex-item">
+            <h3>Kroppsmedvetandeträning (BRT)</h3>
+            <p>
+              Vår kroppsmedvetandeträning baseras på Body awareness Regulation
+              Therapy (BRT). Den fokuserar på att aktivera de stabiliserande
+              hållningsmusklerna och kroppens inre strukturer, vilket leder till
+              förbättrad biokemi och psykisk balans. Behandlingen hjälper
+              patienter att utveckla en sund kroppshållning och ett bättre
+              rörelsemönster, vilket är särskilt effektivt för att lindra
+              stress, ångest och kronisk smärta.
+            </p>
+          </div>
 
-        <section id="hitta-hit" class="animate-on-scroll large-on-scroll">
-            <h2>Hitta hit</h2>
-            <div id="map" style="height: 400px; width: 100%;"></div>
-        </section>
+          <div class="flex-item">
+            <h3>Individuell fysioterapi</h3>
+            <p>
+              Vi erbjuder individuellt anpassad fysioterapi för behandling av
+              smärta och funktionsnedsättningar. Genom ortopediska bedömningar
+              och motorisk träning får patienten hjälp med att stärka
+              muskulaturen, förbättra flexibiliteten och minska spänningar.
+              Behandlingen är särskilt användbar för de som lider av
+              ryggsmärtor, ledproblem eller skador.
+            </p>
+          </div>
 
+          <div class="flex-item">
+            <h3>Stresshantering och avspänning</h3>
+            <p>
+              Vår stresshantering och avspänningsträning baseras på moderna
+              teorier som Polyvagal teori och djupandningstekniker. Genom att
+              arbeta med kroppens nervsystem hjälper vi patienten att reglera
+              stressresponsen och återfå lugn och balans. Detta är särskilt
+              effektivt för personer med höga stressnivåer eller sömnproblem.
+            </p>
+          </div>
 
-
-
-
-
-
-
-        <section id="eval" class="animate-on-scroll large-on-scroll">
-        <div class="container">
-            <h1>Interaktiva Psykologiska Tester</h1>
-            <h3 style="text-align: center;">(Resultaten stannar i din dator)</h3>
-   <!--          <div class="tabs">
-                <button class="tab-button active" data-tab="trauma">Traumatest</button>
-                <button class="tab-button" data-tab="anxiety">Ångesttest</button>
-                <button class="tab-button" data-tab="stress">Stresstest</button>
-            </div> -->
-            <div class="tab-content">
-                <div id="trauma" class="test-form active">
-                    <h2>Traumatest</h2>
-                    <form id="traumaTestForm">
-                        <div class="question-container">
-                            <div class="question">
-                                <p>Känner du dig ofta orolig eller rastlös som ett resultat av traumatiska upplevelser?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="traumaRestless" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="traumaRestless" value="2"> Ibland</label>
-                                    <label><input type="radio" name="traumaRestless" value="3"> Ofta</label>
-                                    <label><input type="radio" name="traumaRestless" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <p>Har du svårt att koncentrera dig på grund av minnen eller tankar relaterade till en traumatisk händelse?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="traumaConcentration" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="traumaConcentration" value="2"> Ibland</label>
-                                    <label><input type="radio" name="traumaConcentration" value="3"> Ofta</label>
-                                    <label><input type="radio" name="traumaConcentration" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <p>Upplever du fysiska symtom som hjärtklappning, muskelspänningar eller skakningar som ett svar på traumatiska minnen?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="traumaPhysicalSymptoms" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="traumaPhysicalSymptoms" value="2"> Ibland</label>
-                                    <label><input type="radio" name="traumaPhysicalSymptoms" value="3"> Ofta</label>
-                                    <label><input type="radio" name="traumaPhysicalSymptoms" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <p>Undviker du aktivt platser, människor eller aktiviteter som påminner dig om traumatiska händelser?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="traumaAvoidance" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="traumaAvoidance" value="2"> Ibland</label>
-                                    <label><input type="radio" name="traumaAvoidance" value="3"> Ofta</label>
-                                    <label><input type="radio" name="traumaAvoidance" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" onclick="calculateTrauma()">Bedöm min traumanivå</button>
-                        <div id="result-trauma" class="result-container">
-                            <div class="result-text"></div>
-                            <div class="result-image"></div>
-                        </div>
-                    </form>
-                </div>
-
-
-                <div id="anxiety" class="test-form">
-                    <h2>Ångesttest</h2>
-                    <form id="anxietyTestForm">
-                        <div class="question-container">
-                            <div class="question">
-                                <p>Hur ofta känner du dig orolig utan uppenbar anledning?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="worry" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="worry" value="2"> Ibland</label>
-                                    <label><input type="radio" name="worry" value="3"> Ofta</label>
-                                    <label><input type="radio" name="worry" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <p>Känner du dig ofta rastlös eller har svårt att sitta still?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="restless" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="restless" value="2"> Ibland</label>
-                                    <label><input type="radio" name="restless" value="3"> Ofta</label>
-                                    <label><input type="radio" name="restless" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <p>Har du svårt att koncentrera dig på grund av dina bekymmer?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="concentration" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="concentration" value="2"> Ibland</label>
-                                    <label><input type="radio" name="concentration" value="3"> Ofta</label>
-                                    <label><input type="radio" name="concentration" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <p>Upplever du fysiska symtom som hjärtklappning eller muskelspänningar?</p>
-                                <div class="options">
-                                    <label><input type="radio" name="physicalSymptoms" value="1"> Aldrig</label>
-                                    <label><input type="radio" name="physicalSymptoms" value="2"> Ibland</label>
-                                    <label><input type="radio" name="physicalSymptoms" value="3"> Ofta</label>
-                                    <label><input type="radio" name="physicalSymptoms" value="4"> Alltid</label>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" onclick="calculateAnxiety()">Bedöm min ångestnivå</button>
-
-                  <div id="result-anxiety" class="result-container">
-                <div class="result-text"></div>
-                <div class="result-image"></div>
-            </div>
-                    </form>
-                </div>
-
-                <b style="margin-bottom: 1rem;"></b>
-                
-                <div id="stress" class="test-form">
-                    <h2>Stresstest</h2>
-                    <form id="stressTestForm">
-                                    <div class="question-container">
-                <div class="question">
-                    <p>Hur ofta känner du dig stressad?</p>
-                    <div class="options">
-                        <label><input type="radio" name="stress" value="1"> Sällan</label>
-                        <label><input type="radio" name="stress" value="2"> Ibland</label>
-                        <label><input type="radio" name="stress" value="3"> Ofta</label>
-                        <label><input type="radio" name="stress" value="4"> Hela tiden</label>
-                    </div>
-                </div>
-                <div class="question">
-                    <p>Känner du dig överväldigad av dina åtaganden?</p>
-                    <div class="options">
-                        <label><input type="radio" name="overwhelmed" value="1"> Aldrig</label>
-                        <label><input type="radio" name="overwhelmed" value="2"> Sällan</label>
-                        <label><input type="radio" name="overwhelmed" value="3"> Ofta</label>
-                        <label><input type="radio" name="overwhelmed" value="4"> Alltid</label>
-                    </div>
-                </div>
-                <div class="question">
-                    <p>Hur ofta har du svårt att koppla av?</p>
-                    <div class="options">
-                        <label><input type="radio" name="relax" value="1"> Aldrig</label>
-                        <label><input type="radio" name="relax" value="2"> Ibland</label>
-                        <label><input type="radio" name="relax" value="3"> Ofta</label>
-                        <label><input type="radio" name="relax" value="4"> Hela tiden</label>
-                    </div>
-                </div>
-                <div class="question">
-                    <p>Hur ofta upplever du fysiska symptom (t.ex. huvudvärk, magproblem) relaterade till stress?</p>
-                    <div class="options">
-                        <label><input type="radio" name="physical" value="1"> Aldrig</label>
-                        <label><input type="radio" name="physical" value="2"> Ibland</label>
-                        <label><input type="radio" name="physical" value="3"> Ofta</label>
-                        <label><input type="radio" name="physical" value="4"> Hela tiden</label>
-                    </div>
-                </div>
-            </div>
-            <button type="button" onclick="calculateStress()">Bedöm min stressnivå</button>
-                    </form>
-                </div>
-            </div>
-            <div id="result-stress" class="result-container">
-                <div class="result-text"></div>
-                <div class="result-image"></div>
-            </div>
+          <div class="flex-item">
+            <h3>Gruppträning i Kroppskännedom</h3>
+            <p>
+              Vi erbjuder gruppträning i kroppskännedom för att hjälpa patienter
+              att förbättra sin hållning, balans och andning i en stödjande
+              miljö. Genom regelbunden träning i grupp får patienterna möjlighet
+              att utveckla sin kroppsmedvetenhet och hitta stabilitet och
+              harmoni i kropp och sinne. Gruppträning passar särskilt bra för
+              dem som vill utvecklas tillsammans med andra.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-<!--         <section id="eval-trauma" class="animate-on-scroll large-on-scroll">
-            <div class="eval-container">
-                <h1>Enkelt Interaktivt Traumatest</h1>
-                <form id="traumaTestForm">
-                    <div class="question-container">
-                        <div class="question">
-                            <p>Känner du dig ofta orolig eller rastlös som ett resultat av traumatiska upplevelser?</p>
-                            <div class="options">
-                                <label><input type="radio" name="traumaRestless" value="1"> Aldrig</label>
-                                <label><input type="radio" name="traumaRestless" value="2"> Ibland</label>
-                                <label><input type="radio" name="traumaRestless" value="3"> Ofta</label>
-                                <label><input type="radio" name="traumaRestless" value="4"> Alltid</label>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>Har du svårt att koncentrera dig på grund av minnen eller tankar relaterade till en traumatisk händelse?</p>
-                            <div class="options">
-                                <label><input type="radio" name="traumaConcentration" value="1"> Aldrig</label>
-                                <label><input type="radio" name="traumaConcentration" value="2"> Ibland</label>
-                                <label><input type="radio" name="traumaConcentration" value="3"> Ofta</label>
-                                <label><input type="radio" name="traumaConcentration" value="4"> Alltid</label>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>Upplever du fysiska symtom som hjärtklappning, muskelspänningar eller skakningar som ett svar på traumatiska minnen?</p>
-                            <div class="options">
-                                <label><input type="radio" name="traumaPhysicalSymptoms" value="1"> Aldrig</label>
-                                <label><input type="radio" name="traumaPhysicalSymptoms" value="2"> Ibland</label>
-                                <label><input type="radio" name="traumaPhysicalSymptoms" value="3"> Ofta</label>
-                                <label><input type="radio" name="traumaPhysicalSymptoms" value="4"> Alltid</label>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>Undviker du aktivt platser, människor eller aktiviteter som påminner dig om traumatiska händelser?</p>
-                            <div class="options">
-                                <label><input type="radio" name="traumaAvoidance" value="1"> Aldrig</label>
-                                <label><input type="radio" name="traumaAvoidance" value="2"> Ibland</label>
-                                <label><input type="radio" name="traumaAvoidance" value="3"> Ofta</label>
-                                <label><input type="radio" name="traumaAvoidance" value="4"> Alltid</label>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" onclick="calculateTrauma()">Bedöm min traumanivå</button>
-                </form>
-                <div id="result"></div>
-            </div>
-           
-        </section>
-
-
-        <section id="eval-anxiety" class="animate-on-scroll large-on-scroll">
-        <div class="eval-container">
-            <h1>Enkelt Interaktivt Ångesttest</h1>
-            <form id="anxietyTestForm">
-                <div class="question-container">
-                    <div class="question">
-                        <p>Hur ofta känner du dig orolig utan uppenbar anledning?</p>
-                        <div class="options">
-                            <label><input type="radio" name="worry" value="1"> Aldrig</label>
-                            <label><input type="radio" name="worry" value="2"> Ibland</label>
-                            <label><input type="radio" name="worry" value="3"> Ofta</label>
-                            <label><input type="radio" name="worry" value="4"> Alltid</label>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <p>Känner du dig ofta rastlös eller har svårt att sitta still?</p>
-                        <div class="options">
-                            <label><input type="radio" name="restless" value="1"> Aldrig</label>
-                            <label><input type="radio" name="restless" value="2"> Ibland</label>
-                            <label><input type="radio" name="restless" value="3"> Ofta</label>
-                            <label><input type="radio" name="restless" value="4"> Alltid</label>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <p>Har du svårt att koncentrera dig på grund av dina bekymmer?</p>
-                        <div class="options">
-                            <label><input type="radio" name="concentration" value="1"> Aldrig</label>
-                            <label><input type="radio" name="concentration" value="2"> Ibland</label>
-                            <label><input type="radio" name="concentration" value="3"> Ofta</label>
-                            <label><input type="radio" name="concentration" value="4"> Alltid</label>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <p>Upplever du fysiska symtom som hjärtklappning eller muskelspänningar?</p>
-                        <div class="options">
-                            <label><input type="radio" name="physicalSymptoms" value="1"> Aldrig</label>
-                            <label><input type="radio" name="physicalSymptoms" value="2"> Ibland</label>
-                            <label><input type="radio" name="physicalSymptoms" value="3"> Ofta</label>
-                            <label><input type="radio" name="physicalSymptoms" value="4"> Alltid</label>
-                        </div>
-                    </div>
-                </div>
-                <button type="button" onclick="calculateAnxiety()">Bedöm min ångestnivå</button>
-            </form>
-            <div id="result"></div>
+      <section id="recensioner" class="animate-on-scroll large-on-scroll">
+        <h2>Vad våra klienter säger</h2>
+        <div class="testimonial-container">
+          <ul class="testimonials" id="testimonial-list"></ul>
         </div>
-    </section>
+      </section>
 
-
-
-    <section id="eval-anxiety" class="animate-on-scroll large-on-scroll">
-    <div class="eval-container">
-        <h1>Enkelt Interaktivt Stresstest</h1>
-        <form id="stressTestForm">
-            <div class="question-container">
-                <div class="question">
-                    <p>Hur ofta känner du dig stressad?</p>
-                    <div class="options">
-                        <label><input type="radio" name="stress" value="1"> Sällan</label>
-                        <label><input type="radio" name="stress" value="2"> Ibland</label>
-                        <label><input type="radio" name="stress" value="3"> Ofta</label>
-                        <label><input type="radio" name="stress" value="4"> Hela tiden</label>
-                    </div>
-                </div>
-                <div class="question">
-                    <p>Känner du dig överväldigad av dina åtaganden?</p>
-                    <div class="options">
-                        <label><input type="radio" name="overwhelmed" value="1"> Aldrig</label>
-                        <label><input type="radio" name="overwhelmed" value="2"> Sällan</label>
-                        <label><input type="radio" name="overwhelmed" value="3"> Ofta</label>
-                        <label><input type="radio" name="overwhelmed" value="4"> Alltid</label>
-                    </div>
-                </div>
-                <div class="question">
-                    <p>Hur ofta har du svårt att koppla av?</p>
-                    <div class="options">
-                        <label><input type="radio" name="relax" value="1"> Aldrig</label>
-                        <label><input type="radio" name="relax" value="2"> Ibland</label>
-                        <label><input type="radio" name="relax" value="3"> Ofta</label>
-                        <label><input type="radio" name="relax" value="4"> Hela tiden</label>
-                    </div>
-                </div>
-                <div class="question">
-                    <p>Hur ofta upplever du fysiska symptom (t.ex. huvudvärk, magproblem) relaterade till stress?</p>
-                    <div class="options">
-                        <label><input type="radio" name="physical" value="1"> Aldrig</label>
-                        <label><input type="radio" name="physical" value="2"> Ibland</label>
-                        <label><input type="radio" name="physical" value="3"> Ofta</label>
-                        <label><input type="radio" name="physical" value="4"> Hela tiden</label>
-                    </div>
-                </div>
-            </div>
-            <button type="button" onclick="calculateStress()">Bedöm min stressnivå</button>
-        </form>
-        <div id="result"></div>
-    </div>
-    </section>
- 
- -->
-
-
-
-        <section id="blogg" class="animate-on-scroll large-on-scroll">
-            <h2>Senaste från bloggen</h2>
-            <div class="service">
-            <div class="service flex-container-col" style="flex-direction: inherit; align-items: flex-start; align-content: left;">
-            <div class="blog-entry flex-item">
-                <p><strong>10 september 2024:</strong></p>
-                <p>Vi är i startgroparna för det kommande året. Vi har gjort en hel del för att få en bättre förståelse av hur vi jobbar med våra kunder och hur vi kan hjälpa dem att uppnå det som de vill.</p>  
-            </div>
-            <br>
-            <div class="blog-entry flex-item">
-                <p><strong>11 september 2024:</strong></p>
-                <p>Webbplatsens struktur är nästan klar för första utkastet.</p>  
-            </div>
-            <br>
-            <div class="blog-entry flex-item">
-                <p><strong>12 september 2024:</strong></p>
-                <p>Finjusteringar görs och mer CSS och Javascript läggs till</p>  
-            </div>
-    
+      <section id="kontakt" class="animate-on-scroll large-on-scroll">
+        <h2>Kontakta oss</h2>
+        <div class="flex-container">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfrDqyNSOexF22PJ_oK6PpcGlB2fxD-t2Ru8JxMiVP2NgBg4A/viewform?embedded=true"
+            width="100%"
+            height="1878"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            alt="Loading… Bokning kommer snart."
+          >
+          </iframe>
         </div>
-    </div>
-        </section>
+      </section>
+
+      <section id="hitta-hit" class="animate-on-scroll large-on-scroll">
+        <h2>Hitta hit</h2>
+        <div id="map"></div>
+      </section>
+
+      <section
+        id="eval-container"
+        class="animate-on-scroll tab-container large-on-scroll"
+      ></section>
+
+      <section id="blog" class="animate-on-scroll large-on-scroll">
+        <h2 class="blog-start">Senaste från bloggen</h2>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="current-year"></span> VitalMotionAware.care - Katrin Valde. Alla rättigheter förbehållna.</p>
+      <p>
+        &copy; <span id="current-year"></span> VitalMotionAware.care - Katrin
+        Valde. Alla rättigheter förbehållna.
+      </p>
     </footer>
 
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-            crossorigin=""></script>
-    <script src="script.js"></script>
-    <script src="eval.js"></script>
-</body>
+    <!-- For Google map -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/eval.js"></script>
+    <script src="js/text-inclusion.js"></script>
+  </body>
 </html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <h2>Självreflektion</h2>
+  <h3>
+    <p>
+      Ta en stund för dig själv och reflektera över ditt mående. Detta korta
+      test kan initiera en värdefull tankeprocess och ge dig möjlighet att
+      utforska dina känslor på djupet. Resultat från tester stannar i din dator.
+    </p>
+  </h3>
+  <div class="tab-header">
+    <nav id="eval-tab-nav">
+      <button class="tab-button active" onclick="openTab('trauma')">
+        Trauma
+      </button>
+      <button class="tab-button" onclick="openTab('anxiety')">Ångest</button>
+      <button class="tab-button" onclick="openTab('stress')">Stress</button>
+    </nav>
+  </div>
+  <div class="tab-content">
+    <div id="trauma" class="tab-pane active">
+      <h2>Traumatest</h2>
+      <form id="traumaTestForm">
+        <div class="question-container">
+          <div class="question">
+            <p>
+              Känner du dig ofta orolig eller rastlös som ett resultat av
+              traumatiska upplevelser?
+            </p>
+            <div class="options">
+              <label
+                ><input type="radio" name="traumaRestless" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="traumaRestless" value="2" />
+                Ibland</label
+              >
+              <label
+                ><input type="radio" name="traumaRestless" value="3" />
+                Ofta</label
+              >
+              <label
+                ><input type="radio" name="traumaRestless" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Har du svårt att koncentrera dig på grund av minnen eller tankar
+              relaterade till en traumatisk händelse?
+            </p>
+            <div class="options">
+              <label
+                ><input type="radio" name="traumaConcentration" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="traumaConcentration" value="2" />
+                Ibland</label
+              >
+              <label
+                ><input type="radio" name="traumaConcentration" value="3" />
+                Ofta</label
+              >
+              <label
+                ><input type="radio" name="traumaConcentration" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Upplever du fysiska symtom som hjärtklappning, muskelspänningar
+              eller skakningar som ett svar på traumatiska minnen?
+            </p>
+            <div class="options">
+              <label
+                ><input type="radio" name="traumaPhysicalSymptoms" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="traumaPhysicalSymptoms" value="2" />
+                Ibland</label
+              >
+              <label
+                ><input type="radio" name="traumaPhysicalSymptoms" value="3" />
+                Ofta</label
+              >
+              <label
+                ><input type="radio" name="traumaPhysicalSymptoms" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Undviker du aktivt platser, människor eller aktiviteter som
+              påminner dig om traumatiska händelser?
+            </p>
+            <div class="options">
+              <label
+                ><input type="radio" name="traumaAvoidance" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="traumaAvoidance" value="2" />
+                Ibland</label
+              >
+              <label
+                ><input type="radio" name="traumaAvoidance" value="3" />
+                Ofta</label
+              >
+              <label
+                ><input type="radio" name="traumaAvoidance" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+        </div>
+        <button type="button" class="button-calc" onclick="calculateTrauma()">
+          Bedöm min traumanivå
+        </button>
+        <div id="result-trauma" class="result-container">
+          <div class="result-text"></div>
+          <div class="result-image"></div>
+        </div>
+      </form>
+    </div>
+
+    <div id="anxiety" class="tab-pane">
+      <h2>Ångesttest</h2>
+      <form id="anxietyTestForm">
+        <div class="question-container">
+          <div class="question">
+            <p>Hur ofta känner du dig orolig utan uppenbar anledning?</p>
+            <div class="options">
+              <label
+                ><input type="radio" name="worry" value="1" /> Aldrig</label
+              >
+              <label
+                ><input type="radio" name="worry" value="2" /> Ibland</label
+              >
+              <label><input type="radio" name="worry" value="3" /> Ofta</label>
+              <label
+                ><input type="radio" name="worry" value="4" /> Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>Känner du dig ofta rastlös eller har svårt att sitta still?</p>
+            <div class="options">
+              <label
+                ><input type="radio" name="restless" value="1" /> Aldrig</label
+              >
+              <label
+                ><input type="radio" name="restless" value="2" /> Ibland</label
+              >
+              <label
+                ><input type="radio" name="restless" value="3" /> Ofta</label
+              >
+              <label
+                ><input type="radio" name="restless" value="4" /> Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>Har du svårt att koncentrera dig på grund av dina bekymmer?</p>
+            <div class="options">
+              <label
+                ><input type="radio" name="concentration" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="concentration" value="2" />
+                Ibland</label
+              >
+              <label
+                ><input type="radio" name="concentration" value="3" />
+                Ofta</label
+              >
+              <label
+                ><input type="radio" name="concentration" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Upplever du fysiska symtom som hjärtklappning eller
+              muskelspänningar?
+            </p>
+            <div class="options">
+              <label
+                ><input type="radio" name="physicalSymptoms" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="physicalSymptoms" value="2" />
+                Ibland</label
+              >
+              <label
+                ><input type="radio" name="physicalSymptoms" value="3" />
+                Ofta</label
+              >
+              <label
+                ><input type="radio" name="physicalSymptoms" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+        </div>
+        <button type="button" class="button-calc" onclick="calculateAnxiety()">
+          Bedöm min ångestnivå
+        </button>
+        <div id="result-anxiety" class="result-container">
+          <div class="result-text"></div>
+          <div class="result-image"></div>
+        </div>
+      </form>
+    </div>
+
+    <div id="stress" class="tab-pane">
+      <h2>Stresstest</h2>
+      <form id="stressTestForm">
+        <div class="question-container">
+          <div class="question">
+            <p>Hur ofta känner du dig stressad?</p>
+            <div class="options">
+              <label
+                ><input type="radio" name="stress" value="1" /> Sällan</label
+              >
+              <label
+                ><input type="radio" name="stress" value="2" /> Ibland</label
+              >
+              <label><input type="radio" name="stress" value="3" /> Ofta</label>
+              <label
+                ><input type="radio" name="stress" value="4" /> Hela
+                tiden</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>Känner du dig överväldigad av dina åtaganden?</p>
+            <div class="options">
+              <label
+                ><input type="radio" name="overwhelmed" value="1" />
+                Aldrig</label
+              >
+              <label
+                ><input type="radio" name="overwhelmed" value="2" />
+                Sällan</label
+              >
+              <label
+                ><input type="radio" name="overwhelmed" value="3" /> Ofta</label
+              >
+              <label
+                ><input type="radio" name="overwhelmed" value="4" />
+                Alltid</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>Hur ofta har du svårt att koppla av?</p>
+            <div class="options">
+              <label
+                ><input type="radio" name="relax" value="1" /> Aldrig</label
+              >
+              <label
+                ><input type="radio" name="relax" value="2" /> Ibland</label
+              >
+              <label><input type="radio" name="relax" value="3" /> Ofta</label>
+              <label
+                ><input type="radio" name="relax" value="4" /> Hela tiden</label
+              >
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Hur ofta upplever du fysiska symptom (t.ex. huvudvärk, magproblem)
+              relaterade till stress?
+            </p>
+            <div class="options">
+              <label
+                ><input type="radio" name="physical" value="1" /> Aldrig</label
+              >
+              <label
+                ><input type="radio" name="physical" value="2" /> Ibland</label
+              >
+              <label
+                ><input type="radio" name="physical" value="3" /> Ofta</label
+              >
+              <label
+                ><input type="radio" name="physical" value="4" /> Hela
+                tiden</label
+              >
+            </div>
+          </div>
+        </div>
+        <button type="button" class="button-calc" onclick="calculateStress()">
+          Bedöm min stressnivå
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="result-stress" class="result-container">
+    <div class="result-text"></div>
+    <div class="result-image"></div>
+  </div>
+</html>
