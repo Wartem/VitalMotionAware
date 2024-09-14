@@ -85,6 +85,10 @@
     font-weight: 600;
     margin-bottom: 1rem;
   }
+
+  header {
+    display: none;
+}
 }
 
 @media (max-width: 500px) {
