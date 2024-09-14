@@ -11,8 +11,8 @@
     position: static;
 }
 
-  main {
-    margin-top: 0;
+main {
+    margin-top: 0rem;
   }
 
 }
@@ -191,9 +191,9 @@
   }
 
   /* Main Content */
-  main {
-    margin-top: 0.5rem;
-  }
+  /*   main {
+    margin-top: 0rem;
+  } */
 
   section {
     margin-bottom: 2rem;
