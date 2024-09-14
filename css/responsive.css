@@ -5,13 +5,25 @@
   }
 }
 
+@media (max-width: 880px) {
+  header {
+    display: none;
+    position: static;
+}
+
+  main {
+    margin-top: 0;
+  }
+
+}
+
 @media (max-width: 800px) {
   #typing-container {
     font-size: 1.2rem;
   }
 
   #hem h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #hem h3 {
@@ -24,9 +36,6 @@
 }
 
 @media (max-width: 768px) {
-  header {
-    position: static;
-  }
 
   nav ul {
     flex-direction: column;
@@ -36,11 +45,7 @@
   nav ul li {
     margin: 0.5rem 0;
   }
-
-  main {
-    margin-top: 0;
-  }
-
+  
   section {
     padding: 1.5rem;
   }
@@ -85,10 +90,6 @@
     font-weight: 600;
     margin-bottom: 1rem;
   }
-
-  header {
-    display: none;
-}
 }
 
 @media (max-width: 500px) {
@@ -96,16 +97,25 @@
     font-size: 0.8rem;
   }
 
-  #hem h1 {
+    /* Typography */
+#hem h1 {
     font-size: 1.5rem;
-  }
+    margin-bottom: 1rem;
+    }
 
-  #hem h3 {
-    font-size: 0.8rem;
-  }
+    h2 {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    }
+
+    h3 {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    }
 
   #hem h3 p {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   #om-katrin img {
@@ -142,7 +152,7 @@
 
   /* Base styles */
   body {
-    font-size: 14px;
+    font-size: 0.9rem;
     margin: 0.5rem auto;
   }
 
@@ -182,7 +192,7 @@
 
   /* Main Content */
   main {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
   }
 
   section {
@@ -190,35 +200,9 @@
     padding: 1rem 0.5rem;
   }
 
-  /* Typography */
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-    padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  h3 {
-    font-size: 0.9rem;
-    margin-left: 0.5rem;
-  }
-
   /* Home Section */
   #hem {
     padding: 2rem 1rem;
-  }
-
-  #hem h1 {
-    font-size: 1.8rem;
-  }
-  #hem h3 {
-    font-size: 1.2rem;
-  }
-  #hem h3 p {
-    font-size: 1.4rem;
   }
 
   #hem img {
@@ -285,15 +269,10 @@
 
   /* Typing Effect */
   #typing-container {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin: 0.5rem 0;
     padding: 0.3rem;
   }
-
-    h1 {
-      font-size: 1.5em;
-      margin-bottom: 1rem;
-    }
 
     .question-container {
       padding-bottom: 0.75rem;
@@ -372,9 +351,15 @@
     }
 }
 
+@media (max-width: 400px) {
+    #hem h1 {
+        font-size: 1.4rem;
+      }
+}
+
 @media (max-width: 300px) {
   #typing-container {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   #hem h1 {
@@ -382,11 +367,11 @@
   }
 
   #hem h3 {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   #hem h3 p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
